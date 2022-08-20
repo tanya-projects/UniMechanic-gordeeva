@@ -179,6 +179,7 @@ validateForm(requiredInputs);
 submitForm.addEventListener('click', (e) => {
   e.preventDefault();
   hideElement(errorMessage);
+  fileImg.style.border = 'none';
 
   if (
     validateInput(organizationInput) &&
