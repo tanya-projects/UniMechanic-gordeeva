@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Практическое задание для ЮНИМЕХАНИК" />
+    <meta name="author" content="Татьяна Гордеева" />
+
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <!-- Font load -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    
+  </head>
+
+  <body>
+    <header>
+      <h1>Практическое задание для ЮНИМЕХАНИК</h1>
+      <p>Татьяна Гордеева</p>
+    </header>
+    <main>
+        <button class="button__modal">Написать</button>
+    </main>
+
+    <aside class="modal">
+
+       <div class="overlay"></div>
+      <div class="modal__content">
+        <h1 class="modal__title">Стань партнером проекта</h1>
+
+        <form class="modal__form">
+          <div class="modal__option-file">
+            
+            <label class="modal__form-label file" for="logo-name"
+              ><span class="modal__option-required">* </span>Логотип (jpeg,
+              png)</label
+            >
+            <div class="file__container">
+                <img
+                class="file__img"
+                src="./img/pic.png"
+                alt="Load image"
+              />
+                <div class="file__content">
+                <img
+                class="file__icon"
+                    src="./img/icons/choose-file.png"
+                    alt="Choose file"
+                />
+                <label class="file__label" for="file-name"
+                > Выберите файл</label
+                >
+                <input
+                class="file__input"
+                type="file"
+                id="file-name"
+                accept=".jpeg, .png, .jpg"
+                />
+                <button class="file__button">&#x2715</button>
+            </div>
+              
+            </div>
+            <p class="file__path">Файл загружен</p>
+          </div>
+
+          
+          <div class="modal__option modal__option-1">
+            <p class="form__input-error">Заполните поля</p>
+            <label class="modal__form-label" for="organization-name"
+              ><span class="modal__option-required">* </span>Название
+              организации</label
+            >
+            <input
+              class="modal__form-input input-required"
+              value=""
+              type="text"
+              id="organization-name"
+            />
+          </div>
+
+          <div class="modal__option modal__option-2">
+            <label class="modal__form-label" for="phone-number"
+              ><span class="modal__option-required">* </span>Телефон</label
+            >
+            <input class="modal__form-input input-required" type="tel"
+            value="" id="phone-number" />
+          </div>
+
+          <div class="modal__option modal__option-3">
+            <label class="modal__form-label" for="email"
+              ><span class="modal__option-required">* </span>E-mail</label
+            >
+            <input class="modal__form-input input-required" type="email" value='' id="email" />
+          </div>
+
+          <div class="modal__option">
+            <label class="modal__form-label" for="modal__input"
+              ><span class="modal__option-required">* </span>Направление</label
+            >
+
+            <select class="modal__form-input" name="activity" id="activity">
+              <option value=""></option>
+              <option value="ecology">Экология</option>
+              <option value="design">Дизайн</option>
+              <option value="consulting">Консультирование</option>
+            </select>
+          </div>
+
+          <div class="modal__option">
+            <input class="modal__form-input" type="text" id="modal__input" value=""/>
+            <img
+              class="modal__form-icon"
+              src="./img/icons/global.png"
+              alt="global-icon"
+            />
+          </div>
+          <div class="modal__option">
+            <input class="modal__form-input" value="" type="text" id="modal__input" />
+            <img
+              class="modal__form-icon"
+              src="./img/icons/vk.png"
+              alt="social-media-icon"
+            />
+          </div>
+          <div class="modal__option">
+            <input class="modal__form-input" value="" type="text" id="modal__input" />
+            <img
+              class="modal__form-icon"
+              src="./img/icons/odnoklassniki.png"
+              alt="social-media-icon"
+            />
+          </div>
+          <div class="modal__option">
+            <input class="modal__form-input" value="" type="text" id="modal__input" />
+            <img
+              class="modal__form-icon"
+              src="./img/icons/facebook.png"
+              alt="social-media-icon"
+            />
+          </div>
+          <div class="modal__option">
+            <input class="modal__form-input" value="" type="text" id="modal__input" />
+            <img
+              class="modal__form-icon"
+              src="./img/icons/instagram.png"
+              alt="social-media-icon"
+            />
+          </div>
+          <div class="modal__option">
+            <input class="modal__form-input" value="" type="text" id="modal__input" />
+            <img
+              class="modal__form-icon"
+              src="./img/icons/youtube.png"
+              alt="social-media-icon"
+            />
+          </div>
+          <div class="modal__option">
+            <label class="modal__form-label" for="modal__input"
+              >Руководитель</label
+            >
+            <input class="modal__form-input" value="" type="text" id="modal__input" />
+          </div> 
+
+          <button type="submit" class="modal__button modal__button-submit" >
+            Стать партнером проекта
+          </button>
+          <button class="modal__button modal__button-cancel">Отменить</button>
+        </form>
+        <div class="success">
+            <p class="success__title">Заявка успешно отправлена</p>
+            <button class="modal__button modal__button-cancel">Закрыть</button>
+        </div>
+        
+      </div>
+      
+    </aside>
+    <script src="./js/script.js"></script>
+  </body>
+  <footer></footer>
+</html>
