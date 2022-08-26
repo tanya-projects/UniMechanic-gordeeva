@@ -1,0 +1,39 @@
+body {
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+#table {
+  width: 100%;
+  border: 1px solid;
+  border-collapse: collapse;
+}
+thead {
+  background-color: rgb(143, 158, 34);
+  border-bottom: 1px solid;
+  text-align: center;
+}
+
+th,
+td,
+tr {
+  border: 1px solid;
+}
+th,
+td {
+  padding: 5px;
+}
+
+tr:hover {
+  background-color: rgba(143, 158, 34, 0.7);
+}
+
+#userId {
+  width: max-content;
+  display: inline-block;
+  border: none;
+}
+#id {
+  width: 5%;
+}
